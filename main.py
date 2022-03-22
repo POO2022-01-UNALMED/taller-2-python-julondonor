@@ -42,7 +42,7 @@ class Auto:
             if (isinstance(el, Asiento)):
                 if el.registro != self.registro:
                     return "Las piezas no son originales"
-        if motor.registro != self.registro:
+        if self.motor.registro != self.registro:
             return "Las piezas no son originales"
         else:
             return "Auto original"
